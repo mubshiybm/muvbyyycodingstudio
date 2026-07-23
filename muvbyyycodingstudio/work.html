@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Muvbyyy Coding Studio</title>
+<meta name="description" content="Products Muvbyyy Coding Studio has taken from discover to operate — fintech, logistics, community, and field data platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function(){
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">muv<span>byyy</span>_</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link"><span class="dot"></span>Home</a>
+      <a href="services.html" class="nav-link"><span class="dot"></span>Services</a>
+      <a href="work.html" class="nav-link active"><span class="dot"></span>Work</a>
+      <a href="gallery.html" class="nav-link"><span class="dot"></span>Gallery</a>
+      <a href="about.html" class="nav-link"><span class="dot"></span>About</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Selected work</div>
+    <h1>Products we've taken from discover to operate.</h1>
+    <p>A cross-section of what we build — fintech infrastructure, logistics tooling, community platforms, and field data systems.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="swatch" style="background:#1F3FE0;">LEDGER</div>
+        <div class="body">
+          <h3>Ledger</h3>
+          <span class="role">Fintech · Reconciliation engine</span>
+          <p>Rebuilt a payments company's manual reconciliation process into an automated engine handling millions of transactions a day.</p>
+          <div class="stack"><span>Postgres</span><span>Go</span><span>AWS</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="swatch" style="background:#0F1310;">TRANSITLINE</div>
+        <div class="body">
+          <h3>Transitline</h3>
+          <span class="role">Logistics · Fleet routing</span>
+          <p>A routing platform for a regional delivery fleet, cutting average route planning time from hours to minutes.</p>
+          <div class="stack"><span>React</span><span>Node.js</span><span>PostGIS</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="swatch" style="background:#C97A1B;">ROUNDTABLE</div>
+        <div class="body">
+          <h3>Roundtable</h3>
+          <span class="role">Community · Creator platform</span>
+          <p>A membership and community platform built for a creator network, from first prototype through public launch.</p>
+          <div class="stack"><span>Next.js</span><span>Rails</span><span>Redis</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="swatch" style="background:#1E8F5F;">FIELDNOTE</div>
+        <div class="body">
+          <h3>Fieldnote</h3>
+          <span class="role">Non-profit · Field data collection</span>
+          <p>An offline-first survey app for field workers, syncing to a central dashboard once connectivity returns.</p>
+          <div class="stack"><span>Flutter</span><span>Firebase</span><span>Python</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="swatch" style="background:#6C8CFF;">NORTHBEAM</div>
+        <div class="body">
+          <h3>Northbeam</h3>
+          <span class="role">Retail · Internal analytics</span>
+          <p>An internal dashboard consolidating sales, inventory, and staffing data across 40+ store locations.</p>
+          <div class="stack"><span>Vue</span><span>ClickHouse</span><span>GCP</span></div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="swatch" style="background:#12151A;">HOLDFAST</div>
+        <div class="body">
+          <h3>Holdfast</h3>
+          <span class="role">Insurance · Claims platform</span>
+          <p>A claims intake and review platform replacing a decade-old desktop tool used by adjusters in the field.</p>
+          <div class="stack"><span>Rails</span><span>React</span><span>Postgres</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stage-section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>See something close to your problem?</h2>
+        <p>Tell us what you're building and we'll walk through how we'd approach it.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a project →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-logo">muv<span>byyy</span>_ coding studio</div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Muvbyyy Coding Studio. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

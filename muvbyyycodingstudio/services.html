@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Muvbyyy Coding Studio</title>
+<meta name="description" content="How Muvbyyy Coding Studio works: discover, design, engineer, ship, and operate custom software.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function(){
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">muv<span>byyy</span>_</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link"><span class="dot"></span>Home</a>
+      <a href="services.html" class="nav-link active"><span class="dot"></span>Services</a>
+      <a href="work.html" class="nav-link"><span class="dot"></span>Work</a>
+      <a href="gallery.html" class="nav-link"><span class="dot"></span>Gallery</a>
+      <a href="about.html" class="nav-link"><span class="dot"></span>About</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">How we work</div>
+    <h1>A five-stage pipeline, not a black box.</h1>
+    <p>Every project moves through the same five stages, in the same order, whether it's a two-week fix or a year-long build. You always know which stage you're in.</p>
+  </div>
+</header>
+
+<!-- Discover -->
+<section class="stage-section" id="discover">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Stage 01 · Discover</div>
+      <div>
+        <h2>We start by taking your problem apart.</h2>
+        <p>Before anyone opens an editor, we spend time understanding what the software actually needs to do — and what it can safely leave out.</p>
+      </div>
+    </div>
+    <div class="discover-list">
+      <div class="discover-item">
+        <span class="num">01</span>
+        <h3>Stakeholder interviews</h3>
+        <p>We talk to the people who'll use the system daily, not just the people who signed the contract.</p>
+      </div>
+      <div class="discover-item">
+        <span class="num">02</span>
+        <h3>Technical audit</h3>
+        <p>For existing products, we read the codebase, the infra, and the incident history before proposing anything.</p>
+      </div>
+      <div class="discover-item">
+        <span class="num">03</span>
+        <h3>Scoping document</h3>
+        <p>A written plan covering what we're building, what we're not, timeline, and how success gets measured.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Design -->
+<section class="stage-section" id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Stage 02 · Design</div>
+      <div>
+        <h2>Architecture before interface.</h2>
+        <p>We design the system that has to hold up under real load first, then the screens people will actually touch.</p>
+      </div>
+    </div>
+    <div class="design-flow">
+      <div class="design-node"><div class="box">Client</div><span>Web / iOS / Android</span></div>
+      <div class="design-arrow">→</div>
+      <div class="design-node"><div class="box">API layer</div><span>Auth, rate limits</span></div>
+      <div class="design-arrow">→</div>
+      <div class="design-node"><div class="box">Services</div><span>Business logic</span></div>
+      <div class="design-arrow">→</div>
+      <div class="design-node"><div class="box">Data store</div><span>Postgres / queues</span></div>
+    </div>
+    <div class="design-notes">
+      <div><h4>Prototyping</h4><p>Clickable prototypes for anything a user will see, reviewed with your team before a line of production code is written.</p></div>
+      <div><h4>Tech spec sign-off</h4><p>A short document naming the stack, the tradeoffs, and why — so nobody is surprised six weeks in.</p></div>
+      <div><h4>Design system</h4><p>Reusable components from day one, so the product looks and feels consistent as it grows past the first release.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Engineer -->
+<section class="stage-section" id="engineer">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Stage 03 · Engineer</div>
+      <div>
+        <h2>Where most of our time actually goes.</h2>
+        <p>Small, senior teams building in short cycles with code review and tests on every change — not just the ones that feel risky.</p>
+      </div>
+    </div>
+    <div class="capability-grid">
+      <div class="capability"><span class="tag">WEB</span><h3>Web applications</h3><p>Customer dashboards, internal tools, and public-facing products built to stay fast as your data grows.</p></div>
+      <div class="capability"><span class="tag">MOBILE</span><h3>Mobile apps</h3><p>Native and cross-platform iOS and Android apps, from first release through App Store maintenance.</p></div>
+      <div class="capability"><span class="tag">API</span><h3>Backend & APIs</h3><p>Services designed around your actual traffic patterns, documented well enough that your own team can extend them.</p></div>
+      <div class="capability"><span class="tag">CLOUD</span><h3>Cloud infrastructure</h3><p>AWS, GCP, or Azure environments provisioned as code, so your infrastructure is reviewable like everything else.</p></div>
+      <div class="capability"><span class="tag">DATA</span><h3>Data pipelines</h3><p>ETL and reporting pipelines that your analytics team can trust without double-checking the numbers by hand.</p></div>
+      <div class="capability"><span class="tag">DEVOPS</span><h3>DevOps & automation</h3><p>CI/CD pipelines, automated testing, and deployment tooling so releases stop being an event.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Ship -->
+<section class="stage-section" id="ship">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Stage 04 · Ship</div>
+      <div>
+        <h2>A release is a checklist, not an event.</h2>
+        <p>Every deploy follows the same steps whether it's the first release or the fiftieth.</p>
+      </div>
+    </div>
+    <div class="ship-panel">
+      <ul class="checklist">
+        <li><span class="mark">✓</span><div><h4>Automated test suite</h4><p>Unit and integration tests run on every pull request before a merge is allowed.</p></div></li>
+        <li><span class="mark">✓</span><div><h4>Staged rollout</h4><p>New code reaches a small percentage of traffic before it reaches everyone.</p></div></li>
+        <li><span class="mark">✓</span><div><h4>Feature flags</h4><p>Features ship dark and get switched on when you're ready, not when the code merges.</p></div></li>
+        <li><span class="mark">✓</span><div><h4>Rollback plan</h4><p>Every release can be reverted in minutes — written down, not improvised.</p></div></li>
+      </ul>
+      <div class="metric-card">
+        <div class="row"><span>Build status</span><b>passing</b></div>
+        <div class="row"><span>Test coverage</span><b>92%</b></div>
+        <div class="row"><span>Deploy time</span><b>~4 min</b></div>
+        <div class="row"><span>Rollback window</span><b>&lt; 2 min</b></div>
+        <div class="row"><span>Last deploy</span><b>production</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Operate -->
+<section class="stage-section" id="operate">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Stage 05 · Operate</div>
+      <div>
+        <h2>We stay after launch.</h2>
+        <p>Software doesn't stop needing engineers the day it goes live — most of ours keep working on it for years.</p>
+      </div>
+    </div>
+    <div class="operate-grid">
+      <div class="operate-item"><h4>Monitoring</h4><p>Dashboards and alerts tuned to your product, not generic defaults.</p></div>
+      <div class="operate-item"><h4>On-call</h4><p>A real person responding to incidents, with a written runbook behind them.</p></div>
+      <div class="operate-item"><h4>Iteration</h4><p>Monthly retros on what to build next, based on how the product is actually used.</p></div>
+      <div class="operate-item"><h4>Retainers</h4><p>Ongoing engineering capacity you can scale up or down as the roadmap changes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Ready to start Stage 01?</h2>
+        <p>Tell us what you're building and we'll set up a Discover session.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a project →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-logo">muv<span>byyy</span>_ coding studio</div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Muvbyyy Coding Studio. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

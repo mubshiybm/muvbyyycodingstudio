@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muvbyyy Coding Studio — We ship software, on repeat</title>
+<meta name="description" content="Muvbyyy Coding Studio designs, engineers, and operates web, mobile, and backend software for teams who need to move fast without breaking things.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function(){
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">muv<span>byyy</span>_</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active"><span class="dot"></span>Home</a>
+      <a href="services.html" class="nav-link"><span class="dot"></span>Services</a>
+      <a href="work.html" class="nav-link"><span class="dot"></span>Work</a>
+      <a href="gallery.html" class="nav-link"><span class="dot"></span>Gallery</a>
+      <a href="about.html" class="nav-link"><span class="dot"></span>About</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-eyebrow">build 214 &middot; passing</div>
+      <h1>We ship software.<br><em>On repeat.</em></h1>
+      <p class="lede">Muvbyyy Coding Studio is a small team of engineers who design, build, and operate web, mobile, and backend products for teams that can't afford to move slowly.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Start a project →</a>
+        <a href="work.html" class="btn btn-ghost">See the work</a>
+      </div>
+      <div class="hero-badges" aria-label="Studio highlights">
+        <span>Design-led delivery</span>
+        <span>Reliable launches</span>
+        <span>Hands-on support</span>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b class="counter" data-count="48" data-prefix=""></b><span>Products shipped</span></div>
+        <div class="hero-stat"><b class="counter" data-count="99.97" data-suffix="%"></b><span>Uptime managed</span></div>
+        <div class="hero-stat"><b class="counter" data-count="6" data-suffix=" days"></b><span>Avg. sprint cycle</span></div>
+      </div>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-head">
+        <span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span>
+        <span class="terminal-title">muvbyyy — release pipeline</span>
+      </div>
+      <div class="terminal-body" id="termBody"></div>
+    </div>
+  </div>
+</header>
+
+<!-- What we do -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">What we do</div>
+      <div>
+        <h2>Five stages, one team, from idea to running in production.</h2>
+        <p>We don't hand off between departments. The people who design your system are the same ones who carry the pager for it.</p>
+      </div>
+    </div>
+    <div class="capability-grid">
+      <div class="capability reveal">
+        <span class="tag">WEB</span>
+        <h3>Web applications</h3>
+        <p>Customer dashboards, internal tools, and public products built to stay fast as your data grows.</p>
+      </div>
+      <div class="capability reveal">
+        <span class="tag">MOBILE</span>
+        <h3>Mobile apps</h3>
+        <p>Native and cross-platform iOS and Android apps, from first release through App Store maintenance.</p>
+      </div>
+      <div class="capability reveal">
+        <span class="tag">API</span>
+        <h3>Backend & APIs</h3>
+        <p>Services designed around your actual traffic patterns, documented well enough your team can extend them.</p>
+      </div>
+    </div>
+    <div style="margin-top: 32px;">
+      <a href="services.html" class="btn btn-ghost">See our full process →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured work -->
+<section class="stage-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="stage-tag">Featured work</div>
+      <div>
+        <h2>A couple of the systems currently running in production.</h2>
+        <p></p>
+      </div>
+    </div>
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="swatch" style="background:#1F3FE0;">LEDGER</div>
+        <div class="body">
+          <h3>Ledger</h3>
+          <span class="role">Fintech · Reconciliation engine</span>
+          <p>Rebuilt a payments company's manual reconciliation process into an automated engine handling millions of transactions a day.</p>
+          <div class="stack"><span>Postgres</span><span>Go</span><span>AWS</span></div>
+        </div>
+      </div>
+      <div class="work-card reveal">
+        <div class="swatch" style="background:#0F1310;">TRANSITLINE</div>
+        <div class="body">
+          <h3>Transitline</h3>
+          <span class="role">Logistics · Fleet routing</span>
+          <p>A routing platform for a regional delivery fleet, cutting average route planning time from hours to minutes.</p>
+          <div class="stack"><span>React</span><span>Node.js</span><span>PostGIS</span></div>
+        </div>
+      </div>
+      <div class="work-card reveal">
+        <div class="swatch" style="background:#C97A1B;">ROUNDTABLE</div>
+        <div class="body">
+          <h3>Roundtable</h3>
+          <span class="role">Community · Creator platform</span>
+          <p>A membership and community platform built for a creator network, from first prototype through public launch.</p>
+          <div class="stack"><span>Next.js</span><span>Rails</span><span>Redis</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 32px;">
+      <a href="work.html" class="btn btn-ghost">See all work →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="stage-tag">What clients say</div>
+      <div><h2>Teams we've worked alongside.</h2><p></p></div>
+    </div>
+    <div class="quote-grid">
+      <div class="quote-card reveal">
+        <p class="quote">"They read our entire codebase before proposing anything. First team that didn't just want to rewrite it all."</p>
+        <div class="quote-who"><div class="quote-avatar">AN</div><div><b>Amara N.</b><span>VP Engineering, payments startup</span></div></div>
+      </div>
+      <div class="quote-card reveal">
+        <p class="quote">"Deploys stopped being scary. We ship on Fridays now, which felt impossible a year ago."</p>
+        <div class="quote-who"><div class="quote-avatar">DK</div><div><b>David K.</b><span>Founder, logistics platform</span></div></div>
+      </div>
+      <div class="quote-card reveal">
+        <p class="quote">"Muvbyyy stayed on after launch. Most agencies disappear the day the invoice clears."</p>
+        <div class="quote-who"><div class="quote-avatar">RT</div><div><b>Rina T.</b><span>Head of Product, creator platform</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="stage-section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Tell us what you're building.</h2>
+        <p>Send the short version — what the product does, roughly where you are, and what "done" looks like.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a project →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-logo">muv<span>byyy</span>_ coding studio</div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Muvbyyy Coding Studio. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

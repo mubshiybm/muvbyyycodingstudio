@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Muvbyyy Coding Studio</title>
+<meta name="description" content="Why Muvbyyy Coding Studio exists, how we think about software, and the values behind how we work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function(){
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">muv<span>byyy</span>_</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link"><span class="dot"></span>Home</a>
+      <a href="services.html" class="nav-link"><span class="dot"></span>Services</a>
+      <a href="work.html" class="nav-link"><span class="dot"></span>Work</a>
+      <a href="gallery.html" class="nav-link"><span class="dot"></span>Gallery</a>
+      <a href="about.html" class="nav-link active"><span class="dot"></span>About</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"></path></svg>
+    </button>
+    <a href="contact.html" class="nav-cta">Start a project</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">About the studio</div>
+    <h1>We started Muvbyyy because handoffs were the problem.</h1>
+    <p>Too many software projects lose momentum at the seams — between the agency that designed it, the contractor who built it, and whoever's left holding it once it's live. We built a studio that stays in one piece from the first sketch to the five-hundredth deploy.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">What we believe</div>
+      <div>
+        <h2>A few things we won't compromise on.</h2>
+        <p></p>
+      </div>
+    </div>
+    <div class="value-grid">
+      <div class="value-card">
+        <span class="num">01</span>
+        <h3>One team, start to finish</h3>
+        <p>The engineers who design your system are the ones who operate it after launch.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">02</span>
+        <h3>Small, senior teams</h3>
+        <p>We'd rather staff a project with three strong engineers than eight junior ones.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">03</span>
+        <h3>Written down, not tribal knowledge</h3>
+        <p>Specs, runbooks, and decisions live in documents your team can read without us in the room.</p>
+      </div>
+      <div class="value-card">
+        <span class="num">04</span>
+        <h3>Boring technology, on purpose</h3>
+        <p>We reach for proven tools by default, and only use something new when it earns its place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stage-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">By the numbers</div>
+      <div><h2>Where the studio stands today.</h2><p></p></div>
+    </div>
+    <div class="hero-stats" style="margin-top:0;">
+      <div class="hero-stat"><b>48</b><span>Products shipped</span></div>
+      <div class="hero-stat"><b>99.97%</b><span>Uptime managed</span></div>
+      <div class="hero-stat"><b>6 days</b><span>Avg. sprint cycle</span></div>
+      <div class="hero-stat"><b>8</b><span>People on the team</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="stage-tag">Leadership</div>
+      <div>
+        <h2>Who's steering the studio.</h2>
+        <p><a href="gallery.html">See the whole team →</a></p>
+      </div>
+    </div>
+    <div class="lead-grid">
+      <div class="gallery-card">
+        <div class="avatar" style="background:#1F3FE0;">FA</div>
+        <div class="info"><h3>Femi A.</h3><span class="role">Founder &amp; Principal Engineer</span><p>Leads architecture reviews and final sign-off on every build.</p></div>
+      </div>
+      <div class="gallery-card">
+        <div class="avatar" style="background:#1E8F5F;">GO</div>
+        <div class="info"><h3>Grace O.</h3><span class="role">Backend Engineering Lead</span><p>Owns API design and data infrastructure across client projects.</p></div>
+      </div>
+      <div class="gallery-card">
+        <div class="avatar" style="background:#12151A;">CM</div>
+        <div class="info"><h3>Chidi M.</h3><span class="role">Product Designer</span><p>Builds prototypes and design systems ahead of engineering.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stage-section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Think we're a fit?</h2>
+        <p>Tell us what you're building — we reply within two working days.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a project →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-logo">muv<span>byyy</span>_ coding studio</div>
+    <div class="footer-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2026 Muvbyyy Coding Studio. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
